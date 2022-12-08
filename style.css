@@ -1,0 +1,102 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+#expense
+{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(45, 45, 73);
+}
+#flex
+{
+    display: flex;
+    margin-left: 100px;
+}
+.addedExpenses
+{
+    margin-left: 200px;
+}
+h2
+{
+    font-size: 18px;
+    color: rgb(46, 71, 63);
+}
+.budget
+{
+    height: 400px;
+    background-color: rgb(141, 121, 121);
+    border: 1px solid rgb(129, 123, 123);
+    padding: 50px;
+    border-radius: 100px;
+}
+.budget input
+{
+    padding: 10px;
+    border-radius: 5px 0px;
+    border: none;
+    outline: none;
+}
+.budget #money
+{
+    border-radius: 8px 0px 0px 8px;
+}
+.budget #addMoney
+{
+    border-radius: 0px 8px 8px 0px;
+    padding: 10px;
+    margin-left: -3px;
+    outline: none;
+    border: none;
+}
+#expenseName, #expenseAmount
+{
+    width: 280px;
+}
+.budget #addExpense
+{
+    width: 100px;
+    padding: 7px;
+    border-radius: 10px 0px;
+    border: none;
+    outline: none;
+    margin-left: 90px;
+}
+#addedExpenses
+{
+    font-size: 30px;
+    line-height: 1.5;
+}
+.addedExpenses h2
+{
+    font-size: 40px;
+}
+
+@media only screen and (max-width:768px){
+    .addedExpenses{
+        margin-left: 0px;
+    }
+    #flex{
+        display: block;
+        margin-left: 0px;
+        text-align: center;
+    }
+    hr{
+        display: none;
+    }
+    .budget #addedExpenses{
+        margin-left: 0px;
+    }
+    .budget{
+        height: auto;
+    }
+    h2{
+        font-size: 20px;
+    }
+    #expenseName, #expenseAmount{
+        width: 250px;
+    }
+}
